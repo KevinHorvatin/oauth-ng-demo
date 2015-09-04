@@ -10,7 +10,8 @@
 *.DS_Store
 
 # Ignore dependency libraries
-node_modules
+node_modules/
+app/bower_components/
 
 # Ignore logs
 *.log

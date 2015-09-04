@@ -19,11 +19,13 @@
   <div id="logo">
 
     <oauth
-      site="https://oauth-ng-server.herokuapp.com"
-      client-id="23c6ceaba56c00e940f890acc9f4c75a94991c62f5561338b6311f7026343d58"
-      redirect-uri="https://oauth-ng-demo.herokuapp.com"
-      profile-uri="https://oauth-ng-server.herokuapp.com/api/v1/me"
-      scope="public">
+      site="https://dev.dib.software.dell.com/auth/realms/DSG"
+      client-id="oauth-ng-demo"
+      redirect-uri="http://localhost:9000"
+      profile-uri="https://dev.dib.software.dell.com/auth/realms/DSG/protocol/openid-connect/userinfo"
+      scope="public"
+      authorize-path="/protocol/openid-connect/auth" 
+      response-type="code" >
     </oauth>
 
     <div class="token" ng-if="accessToken">
